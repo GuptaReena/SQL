@@ -71,25 +71,25 @@ Query's :
 
 		-> To USE a Database : Use db_name;
 
-										eg : use college;
+						eg : use college;
 
 
 
 		->To SHOW Database  :  show db_name
 
-										 eg :  show college;
+						eg :  show college;
 
 														
 
 		-> Create Table : create table Student (
 
-									id INT PRIMARY KEY,
+							id INT PRIMARY KEY,
 
-									name varchar(50),
+							name varchar(50),
 
-									age INT NOT NULL
+							age INT NOT NULL
 
-									)	
+						)	
 
 
 
@@ -115,11 +115,11 @@ eg: Create is used to design the schema(column a table can contain ) of a table
 
 
 
-Data Types in SQL
+#Data Types in SQL
 
 -> Most Popular type used in SQL are:
 
-	Char and Varchar : Both are used to store String (0-256) : But the main Diff between Char and Varchar 
+Char and Varchar : Both are used to store String (0-256) : But the main Diff between Char and Varchar 
 Char : If we assign Char (50) it mean it take overall physical memory of the Computer is reserved 
 Varchar : If we assign Varchar(50) it mean it take only the memory required and it can be used by other data also
 Blob :  This datatype is used to store large range of Integer value . Eg: BLOB(1000)	
@@ -218,7 +218,7 @@ CHECK :
 
 SELECT QUERY
 
-  There are various type of select query
+There are various type of select query
 
 For viewing over all table data : SELECT * FROM student;
 For viewing specific column in the table : SELECT col1. col3 from table_name;
@@ -236,13 +236,13 @@ Where clause is used with the select query to add conditional type of data
 
 Operators used in SQL are : Arithmetic Operator  : = , +, /,-, %;
 
-											 Logical Operator  : AND , OR, NOT;
+			   Logical Operator  : AND , OR, NOT;
 
-												eg: select * from student WHERE marks BETWEEN 80 AND 90 OR city= "Mumbai";
+					:eg: select * from student WHERE marks BETWEEN 80 AND 90 OR city= "Mumbai";
 
-											 Comparison Operator : <,>,>=,<=,!;
+			   Comparison Operator : <,>,>=,<=,!;
 
-											 Bitwise Operator  :  ----
+			   Bitwise Operator  :  ----
 
 
 
@@ -291,7 +291,6 @@ Aggregate Functions : Aggregation function are used to perform calculation on a 
 		eg: SUM, AVG,COUNT,MIN,MAX
 
 
-
 	select SUM(marks) from student ;
 	select COUNT(City) from student;
 	select AVG(marks) from student ;
@@ -334,9 +333,6 @@ GENERAL ORDER OF WIRITE ALL THESE CALUSES
 	HAVING (CONDITION) --->   It applies condition on columns
 
 	ORDER BY (COLUMN) ASC/DESC
-
-
-
 
 
 		eg: 	SELECT city  
@@ -437,45 +433,35 @@ To remove Redundancy, maintain Integrity of the data
 
 There are 3 Ways of doing this 
 
-1NF : 1st Normal Form : A table will be in first normal form when the attribute are single value and every cell contain single value.
+			1NF : 1st Normal Form : A table will be in first normal form when the attribute are single value and every cell contain single value.
 
-						--> Every cell should contain only one value.
-
-								soln : we just have to repeat the value again an again 
-
-							And Primary key should be determined
+			--> Every cell should contain only one value.
+				soln : we just have to repeat the value again an again 
+					And Primary key should be determined
 
 
 
-				2NF : The tables has to be in the 1NF
+			2NF : The tables has to be in the 1NF
 
-					  No partial dependency : - Functionally dependent : When the every column is dependent on the primary key then it is known as 	
+				 No partial dependency : - Functionally dependent : When the every column is dependent on the primary key then it is known as 	
 
-											     Functionally dependent
+					Functionally dependent
 
-												eg: stud_name : we can take out student name with the help of stud_id : This mean that stud_name 
+						eg: stud_name : we can take out student name with the help of stud_id : This mean that stud_name is functionally dependent on the stud_id. 
+								- Partially Dependent : When a table have more than 2 primary key then it is known as composite key
+									In this case partially dependent concept comes into place
+											:emp_id, proj_id -> emp_name: In this case we do not need proj_id to get the emp_name
+								--> So we can say that emp_name is partially dependent on emp_id
 
-											  		is functionally dependent on the stud_id.
-
-											  - Partially Dependent : When a table have more than 2 primary key then it is known as composite key
-
-												In this case partially dependent concept comes into place
-
-														emp_id, proj_id -> emp_name: In this case we do not need proj_id to get the emp_name
-
-															--> So we can say that emp_name is partially dependent on emp_id
-
-						soln: Remove the column which have partial dependency and keep them in another table
+								soln: Remove the column which have partial dependency and keep them in another table
 
 	
 
-				3NF : The table has to be in 2NF form 
+			3NF : The table has to be in 2NF form 
 
 					  No transitive dependency  : a->b->c
-
-						eg : add1 -> add_id -> emp_id - > This mean there is an transitive dependency
-
-						soln: Remove the column which have transitive dependency and keep them in another table
+							eg : add1 -> add_id -> emp_id - > This mean there is an transitive dependency
+							soln: Remove the column which have transitive dependency and keep them in another table
 
 				
 
