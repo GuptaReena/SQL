@@ -1,4 +1,3 @@
-"# SQL"
 
 # SQL For Beginner 
 
@@ -464,7 +463,7 @@ There are 3 Ways of doing this
 
 														emp_id, proj_id -> emp_name: In this case we do not need proj_id to get the emp_name
 
-																--> So we can say that emp_name is partially dependent on emp_id
+															--> So we can say that emp_name is partially dependent on emp_id
 
 						soln: Remove the column which have partial dependency and keep them in another table
 
