@@ -14,7 +14,7 @@
 
 ->It understand the Sql Language .
 
-									eg of relational database are : MySQL, postgress, oracle.
+eg of relational database are : MySQL, postgress, oracle.
 
 
 
@@ -22,7 +22,7 @@
 
 ->It wont understand the sql language.
 
-									eg of non relational database are  :  MongoDB
+eg of non relational database are  :  MongoDB
 
 
 
@@ -36,15 +36,15 @@ Delete
 
 ->Database is a collection of related tables : 
 
-																 eg :- Company 
+					eg :- Company 
 
-																						:- employee Table , Salary , Dept, etc.
+						:- employee Table , Salary , Dept, etc.
 
 
 
 ->Table is a combination of Rows and Column : The rows show the individual data of the related column.
 
-																		 The Column show what  type of data contains in a table. 
+ The Column show what  type of data contains in a table. 
 
 
 
@@ -112,7 +112,7 @@ eg: Create is used to design the schema(column a table can contain ) of a table
 
 -> To drop the table table from the database we use  : drop table table_name; 
 
-																			   eg : Drop table student;
+								 eg : Drop table student;
 
 
 
@@ -239,7 +239,7 @@ Operators used in SQL are : Arithmetic Operator  : = , +, /,-, %;
 
 											 Logical Operator  : AND , OR, NOT;
 
-																			eg: select * from student WHERE marks BETWEEN 80 AND 90 OR city= "Mumbai";
+												eg: select * from student WHERE marks BETWEEN 80 AND 90 OR city= "Mumbai";
 
 											 Comparison Operator : <,>,>=,<=,!;
 
@@ -438,7 +438,7 @@ To remove Redundancy, maintain Integrity of the data
 
 There are 3 Ways of doing this 
 
-1NF : 1st Normal Form : A table will be in first normal form when the attribute are single value and every cell contain   		single value.
+1NF : 1st Normal Form : A table will be in first normal form when the attribute are single value and every cell contain single value.
 
 						--> Every cell should contain only one value.
 
