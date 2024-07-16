@@ -119,7 +119,8 @@ eg: Create is used to design the schema(column a table can contain ) of a table
 
 -> Most Popular type used in SQL are:
 
-Char and Varchar : Both are used to store String (0-256) : But the main Diff between Char and Varchar 
+Char and Varchar : Both are used to store String (0-256) : But the main Diff between Char and Varchar
+
 Char : If we assign Char (50) it mean it take overall physical memory of the Computer is reserved 
 Varchar : If we assign Varchar(50) it mean it take only the memory required and it can be used by other data also
 Blob :  This datatype is used to store large range of Integer value . Eg: BLOB(1000)	
